@@ -1,0 +1,134 @@
+body {
+background-color:lightblue;
+text-align: center;
+font-family: arial;
+}
+h1 {
+color:dark blue;
+font: size 40px;
+}
+h2 {
+    color:purple;
+    font-size: 32px;
+    margin-bottom: 10px;
+
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+button{
+    font-size:18px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+img {
+    width: 300px;
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid black;
+}
+.small-image {
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+} 
+nav{
+background-color: purple;
+padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: yellow;
+}
+#about {
+background-color:green;
+padding: 20px;
+margin: 30px auto;
+max-width: 700px;
+border-radius: 15px;
+color: purple;
+font-size: 32px;
+}
+#skills {
+background-color: green;
+padding: 15px;
+margin: 20px auto;
+max-width: 500px;
+border-radius: 15px;
+color: purple;
+font-size: 32px;
+}
+#contact {
+    background-color: blue;
+    padding: 30px;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 15px;
+    color: purple;
+    font-size: 32px;
+}
+#skills {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 15px;
+}
+.skill{
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.pictures {
+    display: flex;
+    justify-content: centre;
+    gap: 20px;
+}
+pictures img{
+    object-fit: cover;
+}
+#projects {
+    padding: 40px;
+    text-align: center;
+}
+#projects h2 {
+    margin-bottom:  25px;
+}
+.project {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.project h3{
+    margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+    .project {
+        display: block;
+        width: auto;
+        margin: 15px;
+    }
+    .pictures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20;
+    }
+    .pictures img {
+        width:90%;
+        max-width: 300px;
+    }
+}
