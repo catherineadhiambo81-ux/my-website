@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our lifestyle</title>
+    <link rel="stylesheet"href="cat.css">
+</head>
+<body>
+    <header class="header4">
+      
+<nav class="navbar">
+    <a href="cat.html" class="logo">Caterina Homes</a>
+
+    <div class="menu-container">
+        <button class="menu-dots" id="menuDots">
+                
+            ⋮
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="whycaterina.html">Why caterina</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="ourlifestyle.html">Our Lifestyle</a>
+            <a href="properties.html">Our Properties</a>
+        </div>
+    </div>
+</nav>
+
+    </nav></br></br></br></br></br></br></br></br>
+    <p class="p1">our lifestyle</p>
+    <p><b>more than a house</b></p></header>
+     <section class="lifestyle">
+        <div><p>whether you prefer modern apartments,</br>peaceful neighbourhoods,or</br>family-friendly homes,we help you find</br>the perfect place to call home.</p></div>
+    </section>
+    <figure class="life"><img src="pic5.webp"alt="a well furnished living room"></figure>
+    <section class="bottom"><p class="bottom-text"> we believe every home should offer </br>comfort,happiness and a sense of belonging.</br>discover beautiful homes that match your </br>lifestyle,preferences and budget</p></section>
+  <footer><p class="copyright2">&copy; 2026 <b>your lifestyle. your comfort. your home.</b> all rights reserved.</p></footer> 
+    
+<script>
+    const menuDots = document.getElementById("menuDots");
+    const navLinks = document.getElementById("navLinks");
+
+    menuDots.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+
+        const isOpen = navLinks.classList.contains("show");
+        menuDots.setAttribute("aria-expanded", isOpen);
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".menu-container")) {
+            navLinks.classList.remove("show");
+            menuDots.setAttribute("aria-expanded", "false");
+        }
+    });
+</script>
+
+
+</body>
+</html>

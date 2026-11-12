@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why caterina</title>
+    <link rel="stylesheet"href="cat.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+    <a href="cat.html" class="logo">Caterina Homes</a>
+
+    <div class="menu-container">
+        <button class="menu-dots" id="menuDots">
+                
+            ⋮
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="whycaterina.html">Why caterina</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="ourlifestyle.html">Our Lifestyle</a>
+            <a href="properties.html">Our Properties</a>
+        </div>
+    </div>
+</nav>
+    </header>
+    
+<section class="why-us">
+    <div class="why-heading">
+        <span class="small-title">WHY CHOOSE US</span>
+        <h1>Find a Place You'll Love</h1>
+        <p>Find a place where comfort meets your lifestyle.</p>
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=85"
+                 alt="Modern apartment buildings">
+
+            <div class="feature-info">
+                <h2>Affordable Housing</h2>
+                <p>Quality homes at fair prices, designed for every budget.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=85"
+                 alt="Beautiful modern house">
+
+            <div class="feature-info">
+                <h2>Modern Homes</h2>
+                <p>Stylish, spacious homes designed for comfortable living.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=85"
+                 alt="Contemporary residential apartments">
+
+            <div class="feature-info">
+                <h2>Trusted Service</h2>
+                <p>We guide you through your home-searching journey.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="property-banner">
+        <div class="banner-text">
+            <h2>Your Perfect Home Starts Here</h2>
+            <p>Discover beautiful homes that suit your lifestyle.</p>
+            <a href="properties.html">Explore Properties →</a>
+        </div>
+    </div>
+</section>
+ <footer><p class="copyright2">&copy; 2026 housing website. all rights reserved.</p></footer>
+<script>
+    const menuDots = document.getElementById("menuDots");
+    const navLinks = document.getElementById("navLinks");
+
+    menuDots.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+</script>
+</body>
+</html>

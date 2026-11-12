@@ -1,65 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>my website</title>
-<link rel="stylesheet"
-href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caterinahousing.ke</title>
+    <link rel="stylesheet"href="cat.css">
 </head>
-
 <body>
-    <nav>
-        <a href="#about">about me</a>
-        <a href="#skills">skills</a>
-        <a href="#contact">contact</a>
-    </nav>
-    <h1>welcome to my website</h1>
-    <h2 id="about">about me</h2>
-    <p>my name is catherine.I am a passionate ict student
-        intrested in technology,web development,
-        computer maintenance and programming.i enjoy learning new computer skills
-        and using technology to solve problems.
-    </p>
-    <section id="skills">
-    <h2>my skills</h2>
-    <div class="skill">
-         <p>python</p>
-    </div>
-    <div class="skill">
-         <p>css</p> 
-    </div>
-    <div class="skill">
-         <p>HTML</p>
-    </div>
-    </section>
-    <section id="projects">
-        <h2>my projects</h2>
-        <div class="project">
-            <h3>my first website</h3>
-            <p>i created my first website using html and css during my attachment.</p>
+   
+  <header class="header1">
+    <nav class="navbar">
+    <a href="cat.html" class="logo">Caterina Homes</a>
+
+    <div class="menu-container">
+        <button class="menu-dots" id="menuDots">
+                
+            ⋮
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="whycaterina.html">Why caterina</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="ourlifestyle.html">Our Lifestyle</a>
+            <a href="properties.html">Our Properties</a>
         </div>
-        <div class="project">
-            <h3>python programming</h3>
-            <p>i have learned python programming and basic coding.</p>
-        </div>
-        <div class="project">
-            <h3>computer maintenance</h3>
-            <p>i have learned basic computer maintenance and troubleshooting.</p>
-        </div>
-    </section>
-    <a href="#contact"><button>contact me</button></a>
-    <a href="https://www.google.com">visit google</a>
-    <div class="pictures">
-        <img src="1762452287455[1].jpg"alt="my photo">
-        <img class="small-image" src="photo.avif"alt="my photo">
     </div>
-    <h2 id="contact">contact me</h2>
-    <p>you can contact me through:</p>
-    <p>
-        <a
-        href="mailto:catherineadhiambo81@gmail.com">catherineadhiambi81@gmail.com</a>
-    </p>
-    <footer>
-        <p>&copy;2026 catherine adhiambo.
-            all rights preserved.</p>
-    </footer>
+</nav>
+
+    
+  </header>
+  <p class="intro-text">Discover beautiful comfortable and affordable </br>homes designed to match your lifestyle.</br>
+  whether you are looking for a modern apartment</br>
+a family house or,or peaceful place to live,</br>
+we are here to help you find the perfect home</p>
+  <section class="section1">
+    <figure><img src="file_00000000ec008246a062e53e2d0eb7a7.png"alt="amazing beautiful apartments" class="apartment-image">
+    </figure>
+  </section>
+  <section class="section2">
+       <h2><bl>affordable amazing apartments</bl></h2>
+       <a href="properties.html"class="learn-btn">learn more&rarr;</a>
+  </section>
+  <section class="contacts">
+  <h3>send us a message</h3>
+        <form
+            action="https://formsubmit.co/catherineadhiambo81@gmail.com"
+            method="post">
+            <label for="name">full name:</label>
+        <input type="text"
+        name="name"
+        id="name"
+        placeholder="enter your name" required></br></br>
+        <label for="email">your email address</label>
+        <input type="email"
+        name="email"
+        id="email"
+        placeholder="enter your email" required></br></br>
+        <label for="message">your message</label>
+        <textarea id="message"
+        name="message"
+        placeholder="write your message here"required></textarea></br></br>
+        <button type="submit">send message</button></section></form>
+<footer class="site-footer">
+  <h3>your privacy matters</h3>
+        <p class="privacy-text">
+          
+          we are commited to protecting and</br>
+        respecting your privacy.the personal</br>
+      information you provide will </br>
+    only be used to administer your</br>
+  account and provide</br>
+the services requested.</p>
+
+<p class="copyright">&copy; 2026 housing website. all rights reserved.</p></footer>
+<script>
+    const menuDots = document.getElementById("menuDots");
+    const navLinks = document.getElementById("navLinks");
+
+    menuDots.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+</script>
+
+
 </body>
 </html>
